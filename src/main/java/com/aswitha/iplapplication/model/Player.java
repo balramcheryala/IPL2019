@@ -2,11 +2,18 @@ package com.aswitha.iplapplication.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table
 public class Player {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
 
 	@Column
 	private String player_teamname;
@@ -105,6 +112,14 @@ public class Player {
 
 	public String getDestination_folder_name() {
 		return this.destination_folder_name;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	@Override

@@ -36,12 +36,12 @@
 				 <c:forEach var="playerslist" items="${playerslist}">
 
 					<tr>
-					<td>${playerslist.name}</td>
-					<td>${playerslist.role}</td>
-					<td>${playerslist.batting}</td>
-					<td>${playerslist.bowler}</td>
-					<td>${playerslist.nation}</td>
-					<td>${playerslist.dob}</td>
+					<td>${playerslist.player_name}</td>
+					<td>${playerslist.player_role}</td>
+					<td>${playerslist.player_batting_style}</td>
+					<td>${playerslist.player_bowling_style}</td>
+					<td>${playerslist.player_nationality}</td>
+					<td>${playerslist.player_dob}</td>
 					</tr>
 				</c:forEach>
 				</table>
