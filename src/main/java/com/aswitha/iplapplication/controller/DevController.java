@@ -44,7 +44,7 @@ public class DevController {
 	public ModelAndView TeamList(@PathVariable("teamrequest") String iplteam) {
 		Map<String, Object> model = new HashMap<String, Object>();
 		try {
-			model.put("teamlist", getTeamDeails(iplteam));
+			model.put("team", getTeamDeails(iplteam));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

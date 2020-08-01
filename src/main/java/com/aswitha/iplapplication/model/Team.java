@@ -78,4 +78,10 @@ public class Team {
 		this.id = id;
 	}
 
+	@Override
+	public String toString() {
+		return "Team [id=" + id + ", team_name=" + team_name + ", team_coach=" + team_coach + ", team_captain="
+				+ team_captain + ", team_home_venue=" + team_home_venue + ", team_owner=" + team_owner + "]";
+	}
+
 }

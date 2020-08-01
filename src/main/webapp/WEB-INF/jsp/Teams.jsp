@@ -17,8 +17,6 @@
 			<th>CAPTAIN</th>
 			<th>VENUE</th>
 			<th>OWNER</th>
-			<c:forEach var="team" items="${teamlist}">
-
 				<tr>
 					<td>${team.team_name}</td>
 					<td>${team.team_coach}</td>
@@ -27,7 +25,6 @@
 					<td>${team.team_owner}</td>
 
 				</tr>
-			</c:forEach>
 	</table>
 	<br />
 </body>
