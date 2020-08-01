@@ -25,7 +25,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class DevController {
 
 	private static final String PLAYER_URL = "https://raw.githubusercontent.com/balramcheryala/IPL2019/master/src/main/jsonfile/IPLPlayer/";
-	private static final String TEAM_URL = "https://raw.githubusercontent.com/balramcheryala/IPL2019/master/src/main/jsonfile/IPLPlayer/";
+	private static final String TEAM_URL = "https://raw.githubusercontent.com/balramcheryala/IPL2019/master/src/main/jsonfile/IPLTeam/";
 	private static final String JSON_EXTENSION = ".json";
 	
 	@Autowired EntityManager entityManager;
