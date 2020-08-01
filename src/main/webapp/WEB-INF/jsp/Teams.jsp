@@ -10,26 +10,25 @@
 </head>
 
 <body>
-		<table border="1" cellpadding="2" width="70%">
-			<tr>
-				<th>NAME</th>
-				<th>COACH</th>
-				<th>CAPTAIN</th>
-				<th>VENUE</th>
-				<th>OWNER</th>
-				<c:forEach var="team" items="${teamlist}">
+	<table border="1" cellpadding="2" width="70%">
+		<tr>
+			<th>NAME</th>
+			<th>COACH</th>
+			<th>CAPTAIN</th>
+			<th>VENUE</th>
+			<th>OWNER</th>
+			<c:forEach var="team" items="${teamlist}">
 
-					<tr>
-						<td>${team.name}</td>
-						<td>${team.couch}</td>
-						<td>${team.caption}</td>
-						<td>${team.veneue}</td>
-						<td>${team.owner}</td>
+				<tr>
+					<td>${team.team_name}</td>
+					<td>${team.team_coach}</td>
+					<td>${team.team_captain}</td>
+					<td>${team.team_home_venue}</td>
+					<td>${team.team_owner}</td>
 
-					</tr>
-				</c:forEach>
-		</table>
-		<br />
-</form>
+				</tr>
+			</c:forEach>
+	</table>
+	<br />
 </body>
 </html>
