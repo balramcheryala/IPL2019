@@ -1,30 +1,23 @@
 package com.aswitha.iplapplication.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PlayerMain {
 
-	private String name;
-	
-	private Player DelhiDareDevils;
+	private List<Player> playerDetails = new ArrayList<Player>();
 
-	public String getName() {
-		return name;
+	public List<Player> getPlayerDetails() {
+		return playerDetails;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public Player getDelhiDareDevils() {
-		return DelhiDareDevils;
-	}
-
-	public void setDelhiDareDevils(Player delhiDareDevils) {
-		DelhiDareDevils = delhiDareDevils;
+	public void setPlayerDetails(List<Player> playerDetails) {
+		this.playerDetails = playerDetails;
 	}
 
 	@Override
 	public String toString() {
-		return "PlayerMain [name=" + name + ", DelhiDareDevils=" + DelhiDareDevils + "]";
+		return "PlayerMain [ playerDetails=" + playerDetails + "]";
 	}
 
 }

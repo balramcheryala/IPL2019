@@ -50,7 +50,7 @@ public class DevController {
 	
 	public static void test2() throws JsonParseException, JsonMappingException, IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        URL url = new URL("https://raw.githubusercontent.com/balramcheryala/DevIPL/master/iplapplication/src/main/jsonfile/IPLPlayer/DelhiDareDevils.json");
+        URL url = new URL("https://raw.githubusercontent.com/balramcheryala/IPL2019/master/src/main/jsonfile/IPLPlayer/DelhiDareDevils.json");
         PlayerMain player = objectMapper.readValue(url, PlayerMain.class);
         System.out.println(player);
         player.toString();
@@ -59,6 +59,5 @@ public class DevController {
 	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
 		test2();
 	}
-	
 	
 }
