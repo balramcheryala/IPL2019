@@ -30,11 +30,6 @@ public class DevController {
 	
 	@Autowired EntityManager entityManager;
 
-	@GetMapping
-	public String test() {
-		return "Testing Done";
-	}
-
 	@GetMapping(value = "ipl")
 	public ModelAndView iplHomepage() {
 		return new ModelAndView("iplhome");
